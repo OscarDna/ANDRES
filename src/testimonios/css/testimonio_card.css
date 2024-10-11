@@ -1,0 +1,118 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.carousel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    max-width: 90%; /* Ajusta el ancho máximo para pantallas grandes */
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    display: none; /* Ocultar todos los testimonios inicialmente */
+}
+
+.carousel-item.active {
+    display: block; /* Mostrar solo el testimonio activo */
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ajusta el ancho de la tarjeta */
+    padding: 20px; /* Padding interno */
+    max-width: 300px; /* Limitar el tamaño máximo del card */
+    position: relative; /* Asegurarse de que los iconos se posicionen en relación al card */
+    text-align: center; /* Centrar texto y contenido */
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: transparent; /* Fondo transparente */
+    border: 60px; /* Sin borde */
+    font-size: 5px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #593e28; /* Color de fondo de los íconos */
+    border-radius: 100%; /* Hacer los íconos redondos */
+    width: 20px; /* Tamaño de las flechas */
+    height: 10%; /* Tamaño de las flechas */
+}
+
+/* Imagen de perfil */
+.profile-img {
+    border-radius: 50%;
+    width: 80px; /* Ajusta el tamaño de la imagen */
+    height: 80px;
+    margin: 0 auto 15px; /* Centrar la imagen y añadir margen inferior */
+    display: block; /* Centrar el bloque */
+}
+
+/* Comillas */
+.quote-icons {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    color: #007bff;
+}
+
+.quote-icons-bottom {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #007bff;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .carousel-container {
+        flex-direction: column; /* Alinear las tarjetas de manera vertical en pantallas pequeñas */
+    }
+
+    .card {
+        max-width: 90%; /* Ajustar el ancho del card para pantallas pequeñas */
+        margin: 0 auto; /* Centrar la tarjeta */
+    }
+
+    .profile-img {
+        width: 60px;
+        height: 60px; /* Reducir el tamaño de la imagen en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 576px) {
+    .card h3 {
+        font-size: 18px; /* Reducir el tamaño de la fuente en pantallas pequeñas */
+    }
+
+    .card p {
+        font-size: 12px; /* Ajustar el tamaño de texto */
+    }
+}

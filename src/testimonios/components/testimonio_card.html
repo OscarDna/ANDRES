@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrusel de Testimonios</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/testimonio_card.css"> <!-- Enlace al archivo de estilos -->
+</head>
+<body>
+    <div class="carousel-container">
+        <a class="carousel-control-prev" role="button" id="prev-btn">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+
+        <div id="carouselExample" class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card text-center">
+                        <div class="quote-icons">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <img src="/assets/img/img_smile.png" alt="Perfil" class="profile-img">
+                        <h3>Testimonio 1</h3>
+                        <p>“Este es el primer testimonio. ¡Me encantó el servicio y la atención!”</p>
+                        <p class="text-muted">- Juan Pérez</p>
+                        <div class="quote-icons-bottom">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card text-center">
+                        <div class="quote-icons">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <img src="https://via.placeholder.com/100" alt="Perfil" class="profile-img">
+                        <h3>Testimonio 2</h3>
+                        <p>“Este es el segundo testimonio. La calidad es excelente y superó mis expectativas.”</p>
+                        <p class="text-muted">- Ana García</p>
+                        <div class="quote-icons-bottom">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Más tarjetas como estas -->
+            </div>
+        </div>
+
+        <a class="carousel-control-next" role="button" id="next-btn">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- CDN para iconos de FontAwesome -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/testimonio_card.js"></script> <!-- Enlace al archivo de JavaScript -->
+</body>
+</html>

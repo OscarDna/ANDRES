@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.carousel {
+    position: relative;
+    width: 70%;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-card-container {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.testimonial-card {
+    min-width: 33.33%;
+    margin: 0 10px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+.carousel-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.carousel-btn:hover {
+    color: #555;
+}
